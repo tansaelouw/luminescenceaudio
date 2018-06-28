@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+    <!-- base url -->
+    <base href="/">
+    <!--<base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100|Ubuntu+Mono|Yantramanav:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <% if (webpackConfig.htmlElements.headTags) { %>
+        <!-- Configured Head Tags  -->
+        <%= webpackConfig.htmlElements.headTags %>
+            <% } %>
+
+
+                <%= htmlWebpackPlugin.files.webpackManifest %>
+
+                    <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+                        <!-- Webpack Dev Server reload -->
+                        <script src="/webpack-dev-server.js"></script>
+                        <% } %>
+
+                            <!-- Async Google Analytics: change UA-71073175-1 to be your site's ID -->
+                            <script>
+                                window.ga = window.ga || function() {
+                                    (ga.q = ga.q || []).push(arguments)
+                                };
+                                ga.l = +new Date;
+                                ga('create', 'UA-71073175-1', 'auto');
+                                ga('send', 'pageview');
+                            </script>
+                            <script async src="https://www.google-analytics.com/analytics.js"></script>
+                            <!-- End Google Analytics -->
+
+                            <!-- CSS will be injected by webpack here -->
+                            <!-- Preload link tags will be injected by webpack here -->
+
+</head>
+
+<body>
+
+    <app>
+        <Loading...>
+    </app>
+
+    <!-- Scripts will be injected by webpack here -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

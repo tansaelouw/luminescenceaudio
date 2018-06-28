@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+
+
+// For Small Display
+@media screen and(max-width:670px){
+
+  #logo{
+    max-width:250px;
+  }
+  .contact-card{
+    margin: auto;
+    width: 90%;
+    border: 1px solid $font-def-color;
+    padding: 10px;
+  }
+
+}
+
+@media screen and(min-width:375px) and(max-width:600px){
+
+}

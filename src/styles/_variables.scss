@@ -1,0 +1,29 @@
+/* Global Styles */
+$font-def: FuturaBT-Book, Helvetica, Ariel, Sans serif;
+$font-skiny : Yantramanav, Helvetica, Sans serif;
+$font-logo: Ubuntu Mono;
+$font-def-color:rgb(97, 99, 102);
+$font-def-hover:#e6d499;
+$font-color-hover:#e6d499;
+$line-color:#630207;
+$header-font: Oswald, sans-serif;
+
+//$nav-bg:rgba(20,50,50,1);
+$main-theme:#30a5ff;
+$nav-bg:#fff;
+
+$main-bg:lighten(#f2f2f2,2%);
+
+$nav-bg-focus:darken($nav-bg, 10%);
+$nav-line-color: 0.5px solid rgba(99, 2, 7, 1);
+
+
+$main-text-color:#B3B8BA;
+$text-white:#fff;
+$text-grey:#ccc;
+$text-dark:#222;
+$text-orange:#ffcc00;
+$text-link:rgb(255, 204, 0);
+$text-shadow:0 1px 0 rgba(0, 0, 0, 0.33);
+$img-def-width:470px;
+$img-def-height:246px;

@@ -1,0 +1,357 @@
+/* this file will be extracted to main dist folder and is imported in index.html */
+
+
+/* This file is for setting global styles  */
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import "~font-awesome/css/font-awesome.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'variables';
+@import 'general';
+@import 'nav';
+@import 'small';
+@import 'medium';
+@import 'large';
+
+
+html,
+body {
+  background:#000;
+}
+
+/*=====================
+HOME PAGE
+======================*/
+#main{
+  h1,h2,h3,h4,h5,h6{
+      font-family: $header-font;
+  }
+  .oswald{
+    font-family: $header-font !important;
+  }
+
+  color:$font-def-color;
+}
+main{
+  //background:#000;
+  min-height:500px;
+  margin-top:90px;
+}
+
+#homeContainer{
+  background-image: url(https://farm5.staticflickr.com/4505/37402665640_cb54019f25_o.png);
+  background-position: center;
+  background-repeat:no-repeat;
+  width:100%;
+  min-height:500px;
+  //background-color:#000;
+
+  .container > header{
+    max-width:400px;
+    padding: 30px 30px 10px 20px;
+    margin: 0px 20px 10px 0px;
+    position: relative;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+    h1{
+      font-family: "Yantramanav", helvetica, San serif;
+      font-size: 20px;
+      line-height: 20px;
+      position: relative;
+      font-weight: 100;
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+      padding: 0px 0px 5px 0px;
+      span{
+        font-size: 16px;
+        font-style: italic;
+        color: #f8f8f8;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================
+PRODUCT PAGE
+======================*/
+
+#productSidenav{
+  margin-top: -5px;
+  transition: .3s easeout;
+  a{
+    text-decoration: none;
+    &:hover{
+      color:$font-color-hover !important;
+    }
+  }
+  ul{
+    li{
+      list-style: none;
+      display:block;
+      a{
+        text-decoration: none;
+        &:hover{
+          color:$font-color-hover !important;
+        }
+      }
+    }
+  }
+
+  .product-item{
+    display:block;
+    padding:5px 0;
+  }
+
+}
+
+.product-detail{
+  margin-left:300px;
+}
+
+
+
+
+/*============================
+    contact page
+=============================*/
+
+.contact-header{
+    height:60px;
+    max-width:400px;
+    padding-top:20px;
+    border-top:1px solid $line-color;
+    border-bottom:1px solid $line-color;
+    margin:10px auto;
+}
+.contact-card{
+  margin:20px auto;
+  width: 90%;
+  //border: 1px solid $font-def-color;
+  padding:15px 10px;
+}
+//.header-clean{
+//  font-weight: lighter;
+//  color: $main-text-color;
+//  font-family: FuturaBT-Book,Helvetica,Ariel,Sans serif;
+//}
+//.detail{
+//  >p{
+//    font-weight: lighter;
+//    font-size: 1em;
+//    color: #616366;
+//    line-height: 1.5em;
+//    font-family: FuturaBT-Book,Helvetica,Ariel,Sans serif;
+//  }
+//}
+
+
+
+//==================
+//Page page
+//==================
+#Page{
+  padding-top:20px;
+  h3{
+    font-size: 1.2em;
+  }
+  p{
+    font-weight:lighter;
+    font-size: .9em;
+  }
+}
+.warranty-form{
+  input[type=text],input[type=email]{
+    background-color:#222;
+  }
+}
+
+.side-padding{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+
+
+
+//==================
+//Review page
+//==================
+.gap-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.review-card{
+  max-width:600px;
+  margin:0 auto;
+  a{
+    font-family: FuturaBT-Book,Helvetica,Ariel,Sans serif;
+    font-weight:lighter;
+    text-decoration: none;
+    color:$font-def-color;
+    &:hover{
+      color:$font-color-hover;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================
+Component
+======================*/
+a.list-group-item,button.list-group-item{
+  color: blue;
+  border-color:transparent;
+  &:hover,&:focus{
+    background:$nav-bg;
+    color:#fff;
+  }
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.bg-red{
+  background-color: red;
+}
+
+.img-center{margin:auto auto;}
+
+.inner-shadow {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//==============
+//Admin
+//==============
+//
+//.cate-browser-box-wrapper{
+//  height:350px;
+//  float:left;
+//  position:relative;
+//  display:inline-block;
+//  overflow:hidden;
+//}
+//.cate-browser-link{
+//  width:10%;
+//  height:350px;
+//  display:table-cell;
+//  vertical-align:middle;
+//  text-align:center;
+//  >i{font-size: 1.5em;}
+//  &:hover{background:#444;}
+//}
+//.cate-browser-box{
+//  height:350px;
+//  float:left;
+//  background:#f5f5f5;
+//  border:1px solid #ccc;
+//  padding:14px 18px;
+//  overflow-y:scroll;
+//  >.inner-cate-browser-box{
+//    width:100%;
+//    min-height:300px;
+//  }
+//  a{
+//    text-decoration: none;
+//    color:#0066c0;
+//    padding:0 5px;
+//    >span{
+//      margin-top:3px;
+//    }
+//    &:hover{
+//      color:brown;
+//      background-color: #ccc;
+//      cursor: pointer;
+//    }
+//  }
+//}
+//.catelink{
+//  display:block;margin-bottom: 6px !important;
+//}
+//.cate-header{padding:6px 10px;}
+////- this cover product page as well
+//a.active{font-weight: bold;color:brown;background:transparent;}
+//
+//
+//
+
+
+
+
+
+
+
+
+
+//==============
+//Footer
+//==============
+
+div.footer{
+  background:#000;
+}
+
+#footer{
+  padding-top:5px !important;
+  color:#e6d499;
+}
+footer {
+  padding-top:10px;
+  position:relative;
+  width:100%;
+  background: rgba(0,0,0,0.6);
+  min-height: 35px;
+  text-align: center;
+}
+footer a, footer span{
+  font-size: 0.9em;
+  color:#e6d499;
+  text-decoration:none;
+  text-align: center;
+  font-weight: lighter !important;
+}
+footer a:hover{
+  cursor:pointer;
+  color:red;
+}
+
+
